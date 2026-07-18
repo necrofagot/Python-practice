@@ -1,4 +1,4 @@
-with open('D:/archivos_Python/practica/viajesCombi.txt', 'w') as viajes:
+with open('D:/archivos_Python/txt/viajesCombi.txt', 'w') as viajes:
     namEmp = input('Ingrese Nombre de la Empresa, al finalizar precione enter\n')
     while namEmp != '':
         codEmp = input('Codigo Empresa\n')
@@ -7,7 +7,7 @@ with open('D:/archivos_Python/practica/viajesCombi.txt', 'w') as viajes:
         viajes.write(f'{codEmp},{namEmp},{canTravel},{recaudo}\n')
         namEmp = input('Ingrese otro Nombre de Empresa o precione enter\n')    
 
-with open('D:/archivos_Python/practica/viajesCombi.txt', 'r') as viajesR:
+with open('D:/archivos_Python/txt/viajesCombi.txt', 'r') as viajesR:
     documento = viajesR.readlines()
     i = ultrecaudo = 0
     while i < len(documento):

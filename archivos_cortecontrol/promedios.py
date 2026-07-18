@@ -1,4 +1,4 @@
-with open('D:/archivos_Python/practica/example.txt','w') as example:
+with open('D:/archivos_Python/txt/example.txt','w') as example:
     cod_Demon = input('Ingrese un numeor de identificacion o Enter para finalizar')
     while cod_Demon != '':
         cod_De2 = cod_Demon
@@ -10,7 +10,7 @@ with open('D:/archivos_Python/practica/example.txt','w') as example:
             cod_Demon = input('Codigo de demonio o enter')
         example.write(f'{cod_De2},{namDem},{soul_Eated},{timestaed}\n')
 
-with open('D:/archivos_Python/practica/example.txt','r') as exampleR:
+with open('D:/archivos_Python/txt/example.txt','r') as exampleR:
     documento = exampleR.readlines()
     i = 0
     while i < len(documento):    

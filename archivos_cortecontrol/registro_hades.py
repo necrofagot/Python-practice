@@ -1,4 +1,4 @@
-with open('D:/archivos_Python/ctonicRegister.txt','w') as ctonico_w:
+with open('D:/archivos_Python/txt/ctonicRegister.txt','w') as ctonico_w:
     daemon = input('Ingrese nombre de la entidad o Enter para finalizar ').lower()
     while daemon != '':
         dactual = daemon
@@ -9,7 +9,7 @@ with open('D:/archivos_Python/ctonicRegister.txt','w') as ctonico_w:
             daemon = input('Ingrese nombre de la entidad o Enter para finalizar ').lower()
             ctonico_w.write(f'{dactual},{total}\n')
         
-with open('D:/archivos_Python/ctonicRegister.txt','r') as ctonico_r, open('D:/archivos_Python/ctonicRegisterTotal.txt','w') as totalctonico:
+with open('D:/archivos_Python/txt/ctonicRegister.txt','r') as ctonico_r, open('D:/archivos_Python/txt/ctonicRegisterTotal.txt','w') as totalctonico:
       x = 0
       linea = ctonico_r.readlines()
       dato = linea[x].strip().split(',')

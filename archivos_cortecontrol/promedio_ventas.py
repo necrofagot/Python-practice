@@ -1,4 +1,4 @@
-with open("D:/archivos_Python/docum.txt",'r') as ventas, open("D:/archivos_Python/docum2.txt",'w') as promedio:
+with open("D:/archivos_Python/txt/docum.txt",'r') as ventas, open("D:/archivos_Python/txt/docum2.txt",'w') as promedio:
     docVentas = ventas.readlines() #Transforma el archivo en una lista
     i = 0
     while i < len(docVentas):
