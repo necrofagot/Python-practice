@@ -1,0 +1,9 @@
+101,baph,7,2
+101,baph,2,1
+102,lilith,3,1
+102,lilith,3,1
+103,cthulhu,6,2
+103,cthulhu,5,1
+104,asmodeo,2,1
+104,asmodeo,2,1
+104,asmodeo,3,1

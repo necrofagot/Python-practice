@@ -1,0 +1,12 @@
+belcebu,10
+belcebu,25
+astarot,20
+lucifer,20
+lucifer,61
+lucifer,93
+lilith,20
+lilith,50
+lilith,60
+baphometh,200
+baphometh,20200
+cthulhu,2000

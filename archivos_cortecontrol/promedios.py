@@ -1,0 +1,28 @@
+with open('D:/archivos_Python/practica/example.txt','w') as example:
+    cod_Demon = input('Ingrese un numeor de identificacion o Enter para finalizar')
+    while cod_Demon != '':
+        cod_De2 = cod_Demon
+        soul_Eated = timestaed = 0
+        while cod_Demon == cod_De2:
+            namDem = input('Ingrese su nombre')
+            soul_Eated += int(input('Almas consumidas'))
+            timestaed += 1
+            cod_Demon = input('Codigo de demonio o enter')
+        example.write(f'{cod_De2},{namDem},{soul_Eated},{timestaed}\n')
+
+with open('D:/archivos_Python/practica/example.txt','r') as exampleR:
+    documento = exampleR.readlines()
+    i = 0
+    while i < len(documento):    
+        linea = documento[i].strip().split(',')
+        cod_Demon = linea[0]
+        soul_Eated = timestaed = 0
+        while cod_Demon == linea[0]:
+            soul_Eated += int(linea[2])
+            timestaed += int(linea[3])
+            namDem = linea[1]
+            i += 1
+            if i == len(documento): break
+            linea = documento[i].strip().split(',')
+        prom = soul_Eated / timestaed
+        print(f'El demonio {namDem} comio {soul_Eated} almas en {timestaed} veces, con un promedio de {prom} almas por vez')

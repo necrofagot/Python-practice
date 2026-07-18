@@ -1,0 +1,8 @@
+101,chevalier,15,120000
+101,chevalier,5,40000
+101,chevalier,10,200000
+102,delta,13,135000
+102,delta,8,80700
+102,delta,30,480500
+103,cooperativa,4,200000
+104,pitotravel,40,500100

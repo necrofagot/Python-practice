@@ -1,0 +1,6 @@
+vendedor1000,vendido200.0,cantidad ventas1
+vendedor1000,vendido400.0,cantidad ventas2
+vendedor1001,vendido2000.0,cantidad ventas1
+vendedor1001,vendido2003.0,cantidad ventas2
+vendedor1002,vendido200.0,cantidad ventas1
+vendedor1002,vendido3200.0,cantidad ventas2
