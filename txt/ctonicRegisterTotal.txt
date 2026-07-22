@@ -1,5 +1,9 @@
-belcebu,55
-astarot,20
-lucifer,174
-lilith,310
-baphometh,22200
+belcebu,35 almas en total
+astarot,20 almas en total
+lucifer,174 almas en total
+lilith,130 almas en total
+baphometh,20400 almas en total
+cthulhu comio 2000 almas en total
+lucifer comio 93 almas que es multiplo de 3
+lilith comio 60 almas que es multiplo de 3
+lucifer comio 61 almas que es primo

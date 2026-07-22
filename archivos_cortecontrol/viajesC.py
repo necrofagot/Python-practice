@@ -8,19 +8,17 @@ with open('D:/archivos_Python/txt/viajesCombi.txt', 'w') as viajes:
         namEmp = input('Ingrese otro Nombre de Empresa o precione enter\n')    
 
 with open('D:/archivos_Python/txt/viajesCombi.txt', 'r') as viajesR:
-    documento = viajesR.readlines()
-    i = ultrecaudo = 0
-    while i < len(documento):
-        linea = documento[i].strip().split(',') #lee la linea i
+    documento = viajesR.readline()
+    ultrecaudo = 0
+    while documento != '':
+        linea = documento.strip().split(',') 
         codEmp = linea[0]
         canTravel = recaudo = 0
-        while codEmp == linea[0]:
+        while  documento != '' and codEmp == linea[0]:
             namEmp = linea[1]
             canTravel += int(linea[2])
             recaudo += int(linea[3])
-            i += 1
-            if i == len(documento): break
-            linea = documento[i].strip().split(',') #lee la linea i
+            if documento != '':  linea = documento.strip().split(',') 
         print(f'{namEmp} realizó {canTravel} y recaudó {recaudo}\n')
         if recaudo > ultrecaudo:
             ultrecaudo = recaudo

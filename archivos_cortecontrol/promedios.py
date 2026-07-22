@@ -11,18 +11,15 @@ with open('D:/archivos_Python/txt/example.txt','w') as example:
         example.write(f'{cod_De2},{namDem},{soul_Eated},{timestaed}\n')
 
 with open('D:/archivos_Python/txt/example.txt','r') as exampleR:
-    documento = exampleR.readlines()
-    i = 0
-    while i < len(documento):    
-        linea = documento[i].strip().split(',')
+    documento = exampleR.readline()
+    while documento != '':    
+        linea = documento.strip().split(',')
         cod_Demon = linea[0]
         soul_Eated = timestaed = 0
-        while cod_Demon == linea[0]:
+        while documento != '' and cod_Demon == linea[0]:
             soul_Eated += int(linea[2])
             timestaed += int(linea[3])
             namDem = linea[1]
-            i += 1
-            if i == len(documento): break
-            linea = documento[i].strip().split(',')
+            if documento != '': linea = documento.strip().split(',')
         prom = soul_Eated / timestaed
         print(f'El demonio {namDem} comio {soul_Eated} almas en {timestaed} veces, con un promedio de {prom} almas por vez')
